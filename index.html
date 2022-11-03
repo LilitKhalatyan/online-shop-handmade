@@ -10,7 +10,34 @@
   </head>
   <body>
     <div class="body-container">
-      <!-- Header -->
+<!-- =========================== Popup =========================== -->
+<div class="popup" id="pop">
+  <div class="popup-body">
+    <span class="" id="btn-close"> <i class="fa fa-close"></i></span>
+    <div class="d-flex">
+      <!-- <div class="right"> -->
+        <form>
+          <div class="">
+            <input type="text" class="popup-elem" placeholder="E-mail" id=""/>
+          </div>
+          <div class="">
+            <input type="password" placeholder="Password" class="popup-elem" id=""/>
+          </div>
+          <div class="">
+            <input type="submit" class="btn-login popup-elem" value="Log In" id=""/>
+          </div>
+          <div class="for-signup">
+            <p>Or create an account</p>
+            <div class="">
+              <input type="submit" class="btn-signup popup-elem" value="Sign up" id=""/>
+            </div>
+          </div>
+        </form>
+      <!-- </div> -->
+    </div>
+  </div>
+</div>
+<!-- =========================== H E A D E R =========================== -->
       <header>
         <div class="header-container">
           <div class="header-logo-icons">
@@ -24,7 +51,7 @@
               </div>
             </div>
             <div class="header-icons">
-              <div class="log-in header-icon">
+              <div class="log-in header-icon" id="login">
                 <i class="fa-solid fa-right-from-bracket"></i>
                 <p>Log in</p>
               </div>
@@ -244,4 +271,5 @@
     </footer>
     <!-- Footer ::: end -->
   </body>
+  <script src="main.js"></script>
 </html>
