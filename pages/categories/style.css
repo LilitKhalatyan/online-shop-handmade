@@ -1,7 +1,7 @@
 * {
-  border: 1px solid blanchedalmond;
+  /* border: 1px solid blanchedalmond; */
   margin: 0 auto;
-  padding: 5px;
+  /* padding: 5px; */
 }
 img {
   width: 100%;
@@ -22,15 +22,14 @@ img {
   display: none;
 }
 /* // move to right---- does not work */
-#btn-close { 
-  text-align: right; 
+#btn-close {
+  text-align: right;
   background-color: #fff;
   border-radius: 4px;
 }
 .d-flex {
   display: flex;
   flex-direction: column;
-
   width: 300px;
   height: 380px;
   background: #fff;
@@ -43,14 +42,14 @@ img {
   border-radius: 5px;
   padding: 5px;
 }
-.btn-login{
+.btn-login {
   width: 100%;
   height: 36px;
   margin: 0px auto;
   background-color: rgb(105, 156, 139);
 }
 
-.btn-signup{
+.btn-signup {
   margin: 0px auto;
   height: 36px;
   width: 120px;
@@ -72,6 +71,7 @@ header {
 }
 .header-container {
   width: 1160px;
+  padding: 5px;
 }
 .header-logo-icons {
   display: flex;
@@ -80,7 +80,6 @@ header {
 }
 .header-icons p {
   white-space: normal;
-
 }
 .header-logo {
   height: 40px;
@@ -92,6 +91,7 @@ header {
 }
 .header-icon {
   display: flex;
+  padding: 8px;
   flex-direction: column;
   justify-content: center;
 }
@@ -111,13 +111,14 @@ header {
 }
 .input-search {
   width: 100%;
-  height: 28px;
+  height: 30px;
   border: 1px black solid;
   border-radius: 10px 0px 0px 10px;
 }
 .search-icon {
   border: 1px black solid;
-  height: 28px;
+  height: 32px;
+  width: 32px;
   border-radius: 0px 10px 10px 0px;
 }
 .search-icon:hover {
@@ -151,6 +152,18 @@ header {
     width: 40%;
     display: none;
   }
+  .block1 {
+    flex-direction: column;
+  }
+  .block1-left, .block1-right {
+    width: 100%;
+  }
+  .join-us {
+ width: 100%;
+  }
+  .our-favorite-items {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -169,9 +182,7 @@ header {
 /* ============================ NAV pannel  ============================ */
 
 nav,
-.nav-2-items,
-.nav-3-headers,
-.nav-3-items {
+.nav-2-items {
   display: flex;
 }
 .nav-2-img {
@@ -216,31 +227,58 @@ nav,
 /* ============================ M A I N   ============================ */
 
 main {
-  border: 2px solid orange;
+  border: 0.5px solid orange;
 }
 
 .block1 {
   display: flex;
-  border: 2px solid red;
-  width: 870px;
+  /* border: 2px solid red; */
+  width: 1160px;
   height: 400px;
+  justify-content: space-between;
 }
 
 .block1-left {
   width: 65%;
+  padding: 10px;
 }
-
-.block1-right-elements:hover {
-  transform: translateY(3px);
-}
-
 .block1-right {
   width: 35%;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  clear:both;
+}
+.join-us {
+  height: 48%;
+  margin-top: 6px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  clear:both;
+  color: white;
+  font-size: medium;
+  /* padding: 8px; */
+  background-image: url('../../../assets/img/coffee_social.png');
+}
+.our-favorite-items {
+  height: 48%;
+  margin-top: 6px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  clear:both;
+  font-size: medium;
+  /* padding: 8px; */
+  background-image: url('../../../assets/img/popular.webp');
 }
 
-.article {
+/* .block1-right-elements:hover {
+  transform: translateY(3px);
+} */
+
+
+/* .article {
   display: none;
-}
+} */
 /* ============================ Footer  ============================ */
 
 footer {
@@ -248,7 +286,6 @@ footer {
 }
 
 /* ============================ S W I P E R   ============================ */
-
 
 .swiper {
   width: 100%;
