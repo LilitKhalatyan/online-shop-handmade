@@ -78,6 +78,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.header-icons p {
+  white-space: normal;
+
+}
 .header-logo {
   height: 40px;
   width: 118px;
@@ -132,6 +136,17 @@ header {
   .header-search-media {
     display: flex;
   }
+  .header-icons {
+    /* display: flex; */
+    width: 40%;
+  }
+  .header-icon {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-icon p {
+    display: block;
+  }
   .header-search-nomedia {
     width: 40%;
     display: none;
@@ -142,6 +157,9 @@ header {
   .header-search-media {
     display: flex;
     width: 75%;
+  }
+  .header-icon p {
+    display: none;
   }
   .header-search-nomedia {
     display: none;
@@ -201,18 +219,15 @@ main {
   border: 2px solid orange;
 }
 
-.block1-swipper {
+.block1 {
   display: flex;
   border: 2px solid red;
   width: 870px;
   height: 400px;
 }
 
-.swipper {
+.block1-left {
   width: 65%;
-}
-.swipper:hover {
-  transform: translateY(3px);
 }
 
 .block1-right-elements:hover {
@@ -230,4 +245,44 @@ main {
 
 footer {
   display: none;
+}
+
+/* ============================ S W I P E R   ============================ */
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
