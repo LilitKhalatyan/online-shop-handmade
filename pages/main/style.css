@@ -8,7 +8,7 @@ img {
 }
 
 /* ============================== Popup ============================== */
-.popup-body-signup{
+.popup-body-signup {
   display: none;
 }
 .popup {
@@ -262,7 +262,7 @@ main {
   color: white;
   font-size: medium;
   /* padding: 8px; */
-  background-image: url('../../../assets/img/coffee_social.png');
+  background-image: url('../../assets/img/coffee_social.png');
 }
 .our-favorite-items {
   height: 48%;
@@ -272,7 +272,7 @@ main {
   clear: both;
   font-size: medium;
   /* padding: 8px; */
-  background-image: url('../../../assets/img/popular.webp');
+  background-image: url('../../assets/img/popular.webp');
 }
 
 /* .block1-right-elements:hover {
