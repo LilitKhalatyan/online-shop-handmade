@@ -280,7 +280,7 @@
         <div class="article-body">
           <div class="article-body-1 article-body-elem">
             <h3>A community doing good</h3>
-            <div>
+            <div class="article-body-elem-text">
               LK-Handmade is online marketplace, where people come together to
               make, sell, buy, and collect unique items. We’re also a community
               pushing for positive change for small businesses, people, and the
@@ -289,7 +289,7 @@
           </div>
           <div class="article-body-2 article-body-elem">
             <h3>Support independent creators</h3>
-            <div>
+            <div class="article-body-elem-text">
               At LK_Handmade just millions of people selling the things they
               love. We make the whole process easy, helping you connect directly
               with makers to find something extraordinary.
@@ -297,30 +297,36 @@
           </div>
           <div class="article-body-3 article-body-elem">
             <h3>Peace of mind</h3>
-            <div>
+            <div class="article-body-elem-text">
               Your privacy is the highest priority of our dedicated team. And if
               you ever need assistance, we are always ready to step in for
               support.
             </div>
           </div>
         </div>
-      </div>
-    </main>
-    <!-- =========================== F O O T E R =========================== -->
-    <footer>
-      <div class="footer-container">
-        <div class="footer-part-1">
-          <div>
+        <!-- article part 2 -->
+        <div class="article-body-4">
+          <div class="ab4-elem">
             If you want to receive exclusive offers, unique gift ideas, and
             personalized tips for shopping and selling on LK-Handmade...
           </div>
-          <div>Subscribe to our latest news and announcemenet.</div>
-          <div class="footer-subscribe-block">
-            <div>
+          <div class="ab4-elem">
+            Subscribe to our latest news and announcemenet.
+          </div>
+          <div class="subscribe-popup" id="subscribe-popup">
+            <div class="subscribe-popup-body">
+              <div class="btn-close" id="btn-close-subscribe">
+                <i class="fa fa-close"></i>
+              </div>
+              <p>Please check your email to confirm your subscribtion</p>
+            </div>
+          </div>
+          <div class="article-subscribe-block">
+            <div>`
               <input
                 type="text"
                 class="subscribe-input"
-                placeholder="Enter your e-mail here "
+                placeholder="Enter your e-mail to subscribe"
                 id="subscribe-inpt"
               />
               <span class="">
@@ -334,19 +340,35 @@
             </div>
           </div>
         </div>
-        <div class="footer-part-3">
-          <div>Gift cards</div>
-          <div>Blog</div>
-          <div>Sell</div>
-          <div>Policies</div>
-          <div>Careers</div>
-          <div>Help Center</div>
-          <div>Privacy settings</div>
+      </div>
+    </main>
+    <!-- =========================== F O O T E R =========================== -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-part-1">
+          <div class="footer-part-1-wrapper">
+            <div>Gift cards</div>
+            <div>Blog</div>
+            <div>Sell</div>
+            <div>Policies</div>
+            <div>Careers</div>
+            <div>Help Center</div>
+            <div>Privacy settings</div>
+          </div>
         </div>
-
-        <!-- footer-part-4 ::: start -->
-        <div class="footer-part-4">
-          <div class="fp4-left">
+        <!-- footer-part-2 ::: start -->
+        <div class="footer-part-2">
+          <div class="fp2-left">
+            <div class="get-app">
+              <div class="sm-facebook sm">
+                <div>
+                  <a href="#"><i class="fa-brands fa-app-store"></i></a>
+                </div>
+                <div>Download the LK-Handmade App</div>
+              </div>
+            </div>
+          </div>
+          <div class="fp2-center">
             <div class="social-media">
               <div class="sm-facebook sm">
                 <a href="#">
@@ -378,37 +400,21 @@
                   <p>Youtube</p>
                 </a>
               </div>
-              <!-- <div>©</div>
-              <div>|</div>
-              <div>Armenia</div>
-              <div>|</div>
-              <div>English (US)</div>
-              <div>|</div>
-              <div>$(USD)</div> -->
             </div>
           </div>
-          <div class="fp4-center">
-            <div class="get-app">
-              <div class="sm-facebook sm">
-                <div>
-                  <a href="#"><i class="fa-brands fa-app-store"></i></a>
-                </div>
-                <div>Download the LK-Handmade App</div>
-              </div>
-            </div>
-          </div>
-          <div class="fp4-right">
+          <div class="fp2-right">
             <div class="footer-designedby">
-              <div>Designed by Lilit Khalatyan</div>
-              <div>©Sourcemind 2022</div>
+              <div class="designedby-elem">Designed by Lilit Khalatyan</div>
+              <div class="designedby-elem">©Sourcemind 2022</div>
             </div>
           </div>
         </div>
-        <!-- footer-part-4 ::: end -->
+        <!-- footer-part-2 ::: end -->
       </div>
     </footer>
     <!-- Footer ::: end -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="swiper.js"></script>
   </body>
 </html>

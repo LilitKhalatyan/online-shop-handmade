@@ -6,7 +6,7 @@ let swiper = new Swiper('.mySwiper', {
   loop: true,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 2800,
     disableOnInteraction: false,
   },
   pagination: {

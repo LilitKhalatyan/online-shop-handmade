@@ -23,13 +23,31 @@ document.getElementById('btn-close-2').addEventListener('click', () => {
 
 // =============== N A V - 2 ===========
 
-// const nav2Items = document.getElementById('home-decor');
+const nav2Items = document.getElementById('home-decor');
 
-// nav2Items.addEventListener('click', () => {
-//   alert('aa');
+nav2Items.addEventListener('click', () => {
+  alert('aa');
+  window.location.href = '../categories/categories.html';
+});
+
+// document.getElementsByClassName('home-decor').addEventListener('click', () => {
 //   window.location.href = '../categories/categories.html';
 // });
 
-// document.getElementsByClassName('nav-2-item').addEventListener('click', () => {
-//   window.location.href = '../categories/categories.html';
-// });
+// =============== F O O T E R  ===========
+
+// =============== F O O T E R  - Subscribe
+
+const btnSubscribe = document.getElementById('btn-subscribe');
+const subscribeInpt = document.getElementById('subscribe-inpt');
+const subscribePopup = document.getElementById('subscribe-popup');
+console.log(subscribeInpt.placeholder.placeholder);
+btnSubscribe.addEventListener('click', () => {
+  alert('aa');
+  subscribePopup.style.display = 'flex';
+});
+
+document.getElementById('btn-close-subscribe').addEventListener('click', () => {
+  subscribeInpt.placeholder = 'Enter your e-mail to subscribe'; // to fix later
+  subscribePopup.style.display = 'none';
+});
