@@ -284,6 +284,9 @@ header {
   width: 30%;
   align-items: flex-start;
 }
+.article-body-elem h3 {
+  padding: 8px;
+}
 
 /* ============================ Footer  ============================ */
 

@@ -23,35 +23,13 @@ document.getElementById('btn-close-2').addEventListener('click', () => {
 
 // =============== N A V - 2 ===========
 
-const nav2Items = document.getElementById('home-decor');
+// const nav2Items = document.getElementById('home-decor');
 
-nav2Items.addEventListener('click', () => {
-  alert('aa');
-  window.location.href = '../categories/categories.html';
-});
+// nav2Items.addEventListener('click', () => {
+//   alert('aa');
+//   window.location.href = '../categories/categories.html';
+// });
 
-document.getElementsByClassName('nav-2-item').addEventListener('click', () => {
-  window.location.href = '../categories/categories.html';
-});
-
-// =============== swiper ============
-
-let swiper = new Swiper('.mySwiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
-  centeredSlides: true,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-// =============== check if username and password mached ============
+// document.getElementsByClassName('nav-2-item').addEventListener('click', () => {
+//   window.location.href = '../categories/categories.html';
+// });
