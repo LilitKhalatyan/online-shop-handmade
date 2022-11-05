@@ -1,7 +1,6 @@
 * {
   /* border: 1px solid blanchedalmond; */
   margin: 0 auto;
-  /* padding: 5px; */
 }
 img {
   width: 100%;
@@ -24,13 +23,17 @@ img {
   align-items: center;
   display: none;
 }
-/* // move to right---- does not work */
-#btn-close {
+
+.btn-close {
   text-align: right;
   background-color: #fff;
   border-radius: 4px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 .d-flex {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 300px;
@@ -51,7 +54,6 @@ img {
   margin: 0px auto;
   background-color: rgb(105, 156, 139);
 }
-
 .btn-signup {
   margin: 0px auto;
   height: 36px;
@@ -69,12 +71,12 @@ img {
 header {
   display: flex;
   justify-content: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   /* width: 100%; */
 }
 .header-container {
   width: 1160px;
-  padding: 5px;
+  padding: 10px;
 }
 .header-logo-icons {
   display: flex;
@@ -155,19 +157,13 @@ header {
     width: 40%;
     display: none;
   }
-  .block1 {
-    flex-direction: column;
+  /* .block1 {
+    display: block;
+    width: 80%;
   }
-  .block1-left,
-  .block1-right {
+  .block1-left {
     width: 100%;
-  }
-  .join-us {
-    width: 100%;
-  }
-  .our-favorite-items {
-    width: 100%;
-  }
+  } */
 }
 
 @media screen and (max-width: 600px) {
@@ -183,111 +179,205 @@ header {
   }
 }
 
-/* ============================ NAV pannel  ============================ */
+/* ============================ M A I N   ============================ */
 
-nav,
+/* ============================ M A I N  block1 flex*/
+.block1 {
+  display: flex;
+  width: 1160px;
+  height: 365px;
+  justify-content: center;
+}
+.block1-left {
+  width: 65%;
+}
+.block1-right {
+  width: 30%;
+  align-self: center;
+  /* display: none; */
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  clear: both; */
+}
+/* .block1-right-wrapper {
+  width: 100%;
+  height: 100%;
+} */
+.join-us {
+  height: 140px;
+  margin-bottom: 5px;
+  /* width: 100%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  clear: both;
+  color: white;
+  font-size: medium;
+  background-image: url('../../assets/img/coffee_social.png');
+}
+.our-favorite-items {
+  height: 210px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  clear: both;
+  font-size: medium;
+  background-image: url('../../assets/img/popular.webp');
+}
+
+/* ============================ M A I N  block1 grid             start*/
+/* .block1-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.block1-left {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+}
+.join-us {
+  grid-area: 5 / span 2;
+  grid-row: 1;
+}
+.our-favorite-items {
+  grid-area: 5 / span 2;
+  grid-row: 2;
+} */
+
+/* ============================ NAV-2 pannel  ============================ */
+
+.nav-2 {
+  width: 1160px;
+}
+.nav-2-header {
+  padding: 8px;
+}
 .nav-2-items {
   display: flex;
+  text-align: center;
+  padding: 8px;
 }
 .nav-2-img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
 }
+
+/* ============================ Article  ============================ */
+
 .article {
+  width: 1160px;
   background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-header {
+  text-align: center;
+  padding: 15px;
+}
+.article-body {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+.article-body-elem {
+  width: 30%;
+  align-items: flex-start;
 }
 
+/* ============================ Footer  ============================ */
+
+footer {
+  width: 1160px;
+}
+.footer-container {
+  width: 100%;
+}
 .footer-part-1 {
+  padding: 10px;
   background-color: rgb(151, 151, 226);
-  height: 120px;
+  height: 100px;
+  text-align: center;
 }
-
+.footer-subscribe-block {
+  padding: 10px;
+}
 .footer-part-2 {
   background-color: rgb(220, 220, 239);
   height: 70px;
 }
-
+.footer-subscribe-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.subscribe-input {
+  height: 36px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: rgb(244, 253, 250);
+}
+.btn-subscribe {
+  height: 40px;
+  border-radius: 18px;
+  color: white;
+  background-color: black;
+}
+/* --------- footer-part-3 -------- */
 .footer-part-3 {
-  background-color: rgb(122, 122, 249);
-  height: 220px;
+  background-color: rgb(111, 111, 222);
+  padding: 10px;
+  height: 52px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
+/* --------- footer-part-4 -------- */
 .footer-part-4 {
   background-color: rgb(21, 21, 69);
-  height: 80px;
+  height: 160px;
   display: flex;
+  /* width: 100%; */
   justify-content: space-around;
   align-items: center;
   color: white;
 }
 .fp4-left,
+.fp4-center,
 .fp4-right {
   display: flex;
+  /* width: 30%; */
 }
-
-/* ============================ M A I N   ============================ */
-
-main {
-  border: 0.5px solid orange;
-}
-
-.block1 {
-  display: flex;
-  /* border: 2px solid red; */
-  width: 1160px;
-  height: 400px;
-  justify-content: space-between;
-}
-
-.block1-left {
-  width: 65%;
-  padding: 10px;
-}
-.block1-right {
-  width: 35%;
-  padding: 10px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clear: both;
-}
-.join-us {
-  height: 48%;
-  margin-top: 6px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clear: both;
+.fa-brands {
   color: white;
-  font-size: medium;
-  /* padding: 8px; */
-  background-image: url('../../assets/img/coffee_social.png');
+  padding: 3px;
 }
-.our-favorite-items {
-  height: 48%;
-  margin-top: 6px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  clear: both;
-  font-size: medium;
-  /* padding: 8px; */
-  background-image: url('../../assets/img/popular.webp');
+.sm p {
+  color: white;
+  padding: 3px;
 }
 
-/* .block1-right-elements:hover {
-  transform: translateY(3px);
-} */
-
-/* .article {
-  display: none;
-} */
-/* ============================ Footer  ============================ */
-
-footer {
-  display: none;
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  gap: 15px;
 }
-
+.sm {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.get-app {
+  border: 1px solid white;
+  height: 42px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* ============================ S W I P E R   ============================ */
 
 .swiper {
@@ -325,4 +415,12 @@ footer {
 .swiper {
   margin-left: auto;
   margin-right: auto;
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  color: #eae4e4;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  color: #eae4e4;
 }

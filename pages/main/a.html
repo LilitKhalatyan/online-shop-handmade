@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LK-Handmade</title>
+    <link rel="stylesheet" href="a.css" />
+    <script
+      src="https://kit.fontawesome.com/3d2382d443.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    
+    <div class="block1">
+      <!-- ----- block1-left ------ -->
+      <div class="block1-left">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw01.webp" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw02.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw05.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw6.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw7.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw8.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../../assets/img/sw10.webp" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <!-- ----- block1-right ------ -->
+      <div class="block1-right">
+        <div class="block1-right-wrapper">
+          <div class="join-us block1-right-elements">Join us</div>
+          <div class="our-favorite-items block1-right-elements">
+            View our favorites
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+ 
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+    </script>
+    <!-- <script src="main.js"></script> -->
+  </body>
+</html>
